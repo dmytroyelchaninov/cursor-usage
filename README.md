@@ -1,6 +1,8 @@
 # Cursor Usage
 
-macOS menu bar app that shows your current Cursor plan usage next to Wi‑Fi / battery.
+macOS menu bar app that shows your current Cursor plan usage.
+
+![Cursor Usage menu bar popover](image.png)
 
 It reuses the Cursor IDE login already on your Mac (reads the encrypted token from Cursor’s local state + Keychain). No separate Cursor account sign-in is required if Cursor is signed in.
 
@@ -23,7 +25,7 @@ swift build -c release
 ./scripts/run.sh
 ```
 
-A **Cursor Usage** item appears in the menu bar with the current usage %. Click it for plan spend, Auto/API/Total breakdown, and links to the dashboard.
+A **Cursor Usage** item appears in the menu bar (e.g. `60·81` for Cursor · API). Click it for the two usage bars, optional Details, and a link to the dashboard.
 
 The **first** launch may prompt for **Keychain** access to `Cursor Safe Storage` — choose **Always Allow**. After that, the session is cached under `~/Library/Application Support/CursorUsage/` so macOS should not ask again on each refresh.
 
