@@ -1,0 +1,7 @@
+.build/
+.swiftpm/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+.DS_Store
+CursorUsage.app/
+# local session cache lives in ~/Library/Application Support/CursorUsage/
